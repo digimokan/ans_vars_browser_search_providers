@@ -1,0 +1,18 @@
+galaxy_info:
+  author: digimokan
+  description: "Define browser search provider names, urls, and hotkeys"
+  license: "MIT"
+  min_ansible_version: 2.3
+  platforms:
+    - name: Archlinux
+      versions:
+        - all
+    - name: FreeBSD
+      versions:
+        - all
+  galaxy_tags:
+    - archlinux
+    - freebsd
+    - browser
+    - search
+
