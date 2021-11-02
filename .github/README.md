@@ -17,9 +17,9 @@ Define browser search provider names, urls, and hotkeys.
 
 ## Purpose
 
-* Define browser search provider names (e.g. google, stackoverflow)
-* Define hotkeys and url-search-strings for each search provider
-* Define a "default" browser search provider
+* Define browser search provider names (e.g. google, stackoverflow).
+* Define hotkeys and url-search-strings for each search provider.
+* Define a "default" browser search provider.
 
 ## Supported Operating Systems
 
