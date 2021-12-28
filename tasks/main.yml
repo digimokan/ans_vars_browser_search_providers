@@ -1,0 +1,4 @@
+- name: "Run main role task, in order to expose shared role vars"
+  debug:
+    - msg: "Define shared role vars."
+
