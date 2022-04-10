@@ -8,11 +8,9 @@ Define browser search provider names, urls, and hotkeys.
 ## Table Of Contents
 
 * [Purpose](#purpose)
-* [Requirements](#requirements)
-* [Supported Operating Systems](#supported-operating-systems)
 * [Quick Start](#quick-start)
     * [Use From Another Role](#use-from-another-role)
-* [Role Options](#role-options)
+* [Role Vars](#role-vars)
 * [Contributing](#contributing)
 
 ## Purpose
@@ -20,11 +18,6 @@ Define browser search provider names, urls, and hotkeys.
 * Define browser search provider names (e.g. google, stackoverflow).
 * Define hotkeys and url-search-strings for each search provider.
 * Define a "default" browser search provider.
-
-## Supported Operating Systems
-
-* Arch Linux
-* FreeBSD
 
 ## Quick Start
 
@@ -37,11 +30,11 @@ Define browser search provider names, urls, and hotkeys.
    - src: https://github.com/digimokan/ans_role_vars_browser_search_providers
    ```
 
-## Role Options
+## Role Vars
 
-See the role `defaults` file, for overridable vars:
+See the role `vars` file:
 
-  * [defaults/main.yml](../defaults/main.yml)
+  * [vars/main.yml](../vars/main.yml)
 
 ## Contributing
 
