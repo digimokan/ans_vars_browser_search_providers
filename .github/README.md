@@ -9,7 +9,7 @@ Define browser search provider names, urls, and hotkeys.
 
 * [Purpose](#purpose)
 * [Quick Start](#quick-start)
-    * [Use From Another Role](#use-from-another-role)
+    * [Use From Playbook](#use-from-playbook)
 * [Role Vars](#role-vars)
 * [Contributing](#contributing)
 
@@ -21,13 +21,34 @@ Define browser search provider names, urls, and hotkeys.
 
 ## Quick Start
 
-### Use From Another Role
+### Use From Playbook
 
-1. Create `meta/requirements.yml` in role root dir, and add this content:
+1. Create `requirements.yml` in ansible project root, and add this content:
 
    ```yaml
    # requirements.yml
    - src: https://github.com/digimokan/ans_role_vars_browser_search_providers
+   ```
+
+2. From the project root directory, install/download the role:
+
+   ```shell
+   $ ansible-galaxy install --role-file requirements.yml --roles-path ./roles --force-with-deps
+   ```
+
+   * _NOTE:_ `--force-with-deps` _ensures subsequent calls download updates_
+
+3. Include the role with `import_role`, from the project playbook:
+
+   ```yaml
+   # playbook.yml
+   - hosts: localhost
+     connection: local
+     tasks:
+       - name: "Define browser search provider names, urls, and hotkeys"
+         ansible.builtin.import_role:
+           name: ans_role_vars_browser_search_providers
+           public: true
    ```
 
 ## Role Vars
